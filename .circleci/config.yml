@@ -11,4 +11,8 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      - welcome/run
+  # Name the workflow "welcome"
+    welcome2:
+    # Run the welcome/run job in its own container
+      jobs:
+        - welcome2/run
