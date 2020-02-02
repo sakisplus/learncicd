@@ -14,4 +14,5 @@ workflows:
   # Name the workflow "welcome"
       build:
         steps:
-        - run echo "First Hello"
+        - checkout
+        - run: echo "First Hello"
